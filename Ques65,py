@@ -1,0 +1,10 @@
+# 65.	Max of Each Matrix Row: Print max element per row.
+matrix = [
+    [3, 4, 1, 8],
+    [1, 4, 9, 11],
+    [76, 34, 21, 1],
+    [2, 1, 4, 5]]
+for row in matrix:
+    print(max(row))
+
+

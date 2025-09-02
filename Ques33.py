@@ -1,0 +1,19 @@
+# 33.	First 25 Prime Numbers: Print them.
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0:
+            return False
+    return True
+
+# Generate first 25 primes
+count = 0
+num = 2
+
+print("First 25 Prime Numbers:")
+while count < 25:
+    if is_prime(num):
+        print(num, end=' ')
+        count += 1
+    num += 1
